@@ -8,32 +8,35 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          id="topic"
-          placeholder="Enter a topic for your poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The poem will be generated here
-        <br />
-        The poem will be generated here
-      </div>
-    </main>
-    <footer>
-      This Ai project was coded by
-      <a href="https://github.com/Missybah/poemgenerator.git">Misbah Saleh</a>
-      and is open-sourced on
-      <a href="https://poemgeneratormisbah.netlify.app/">Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            id="topic"
+            placeholder="Enter a topic for your poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The poem will be generated here
+          <br />
+          The poem will be generated here
+        </div>
+      </main>
+      <footer>
+        This Ai project was coded by
+        <a href="https://github.com/Missybah/poemgenerator.git">Misbah Saleh</a>
+        and is open-sourced on
+        <a href="https://poemgeneratormisbah.netlify.app/">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
