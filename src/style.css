@@ -29,7 +29,7 @@ footer {
   font-size: 0.8em;
   color: #666;
 }
-form {
+.form-container {
   padding: 30px;
   background-color: #f2ebef44;
   display: flex;
@@ -37,12 +37,21 @@ form {
   border-radius: 16px;
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
 }
+form {
+  display: flex;
+}
+.hint {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
 .instructions {
   margin-bottom: 20px;
   font-size: 16px;
   color: #555;
   width: 80%;
-  padding: 16px;
+  padding: 10px;
   border: 1px solid #c04981;
   border-radius: 50px;
   line-height: 20px;
@@ -67,4 +76,7 @@ form {
   background-color: #f8e9f0cd;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.211);
+}
+.hidden {
+  display: none;
 }

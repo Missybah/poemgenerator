@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typewriter-effect/2.18.0/core.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
 
     <title>AI Poem Generator</title>
@@ -14,19 +16,22 @@
         <h1>AI Poem Generator</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a topic for your poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div id="poem" class="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic for your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small class="hint"> i.e: Flower, Sun, Paris or Cat</small>
+          <div id="poem" class="poem hidden"></div>
+        </div>
       </main>
       <footer>
         This Ai project was coded by
@@ -35,7 +40,6 @@
         <a href="https://poemgeneratormisbah.netlify.app/">Netlify</a>
       </footer>
     </div>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>
